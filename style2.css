@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: url(./img/photo1688989744.jpg);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+:root{
+    --main-color: #87ceeb;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color: #111111;
+
+    --bif-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+body{
+    
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 14%;
+    transition: all .50s ease;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+}
+.logo i{
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow:      0px 1px 25px    ;
+}
+.nav-icons i{
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--bg-color);
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+.nav-icons i:hover{
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+.container1{
+    margin-top: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form1{
+    width: 768px;
+    padding: 80px 60px 100px;
+    background: rgba(26, 25, 25, 0.3);
+    backdrop-filter: blur(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.data__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    margin-top: 55px;
+    
+}
+input{
+    background: transparent;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+input::placeholder{
+    font-size: 24px;
+    color: gray;
+}
+input:focus::placeholder{
+    color: darkslategray;
+}
+input:focus{
+    outline: none
+}
+.name{
+    width: 100%;
+}
+.mail{
+    width: 290px;
+}
+.phone{
+    width: 290px;
+
+}
+.text__area{
+    margin-top: 65px;
+    border: 1px solid ;
+    border-radius: 13px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+.message{
+    font-size: 24px;
+    color: gray;
+}
+textarea{
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+}
+textarea:focus::placeholder{
+    color: darkslategray;
+}
+textarea:focus{
+    outline: none;
+}
+.send{
+    width: 100%;
+    text-align: right;
+}
+button{
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: aqua;
+    border-radius: 5px;
+    border: 1px solid aqua;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+button:hover{
+    background: #0000008a;
+}
+button:active{
+    transform: translateY(2px)
+}
+header.sticky{
+    padding: 12px 14%;
+    background: var(--other-color);
+}   
